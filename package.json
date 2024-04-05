@@ -87,6 +87,5 @@
       "npx prettier --write",
       "npx eslint --fix"
     ]
-  },
-  "packageManager": "yarn@3.4.1"
+  }
 }

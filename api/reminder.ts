@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express'
 import axios, { isAxiosError } from 'axios'
 
-const BASE_URL = process.env.VERCEL_URL
+const BASE_URL = process.env.BASE_URL
 // const CRON_SECRET = process.env.CRON_SECRET;
 const axiosClient = axios.create({
   // headers: {
