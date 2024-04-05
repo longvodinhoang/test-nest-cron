@@ -1,0 +1,26 @@
+{
+  "crons": [
+    {
+      "path": "/api/reminder",
+      "schedule": "0 16 * * *"
+    },
+    {
+      "path": "/api/reminder",
+      "schedule": "0 8 * * *"
+    }
+  ],
+  "framework": null,
+  "buildCommand": "",
+  "functions": {
+    "api/**/*.ts": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "crons": [
+    {
+      "path": "/api/monitor/send_webhook",
+      "schedule": "* * * * *"
+    }
+  ]
+}
